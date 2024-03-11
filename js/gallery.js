@@ -80,10 +80,8 @@ function handleClickModal(event) {
   const galleryCard = images.find(({ original }) => original === galleryLiId);
   //   console.log(galleryCard);
   const instance = basicLightbox.create(`
-	<div class="modal">
     <img src="${galleryCard.original}" alt="${galleryCard.description}"/>
-    </div>
-`);
+  `);
 
   instance.show();
 }
